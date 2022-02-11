@@ -7,6 +7,8 @@ var resolution = window.devicePixelRatio || 1;
 var sprites = [];
 var toRad = Math.PI / 180;
 var fx_tl;
+var screenWidth = screen.width;
+var screenHeight = screen.height;
 
 // resize for retina
 resizeCv();
@@ -14,9 +16,9 @@ function start_fx() {
     // particles
     init_fx(
         "circle",         // texture
-        1000,//1777,               // total sprites
+        300,//1777,               // total sprites
         50,50, 50,50,     // width-+, height-+
-        0,1600, 0,1600,   // start position x-+, y-+
+        0, screenWidth, 0, screenHeight,   // start position x-+, y-+
         4,12, 0,360,      // velocity-+, angle-+
         .1,2.5, .2,.8,  // scale start-+, end-+
         360, 0,0,         // rotation start, end-+
