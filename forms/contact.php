@@ -5,5 +5,4 @@
     $_POST['message'],                                    // message
     'From: '.$_POST['name'].' <'.$_POST['email'].'>'      // Headers
   );
-  print_r("test");
 ?>
